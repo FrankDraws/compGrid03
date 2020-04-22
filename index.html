@@ -4,9 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>compGrid02</title>
+  <title>compGrid03</title>
   <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="app.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script>
+    $(function () { // wait for document ready
+      // build scene
+      var scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 300 })
+        .setPin("#pin1")
+        .addIndicators({ name: "1 (duration: 300)" }) // add indicators (requires plugin)
+        .addTo(controller);
+    });
+  </script>
 
 </head>
 
@@ -39,29 +51,30 @@
       <a href="#">View Deals</a>
     </div>
 
-    <div class="accordion">
-      <a>2-Park</a> &nbsp; &nbsp; <a>3-Park</a>
-    </div>
-
-    <div id="header">
-      <div class="product bronze">
-        <p>Bronze Membership<br><span>$100</span></p>
+    <div id="passes">
+      <div class="accordion">
+        <a>2-Park</a> &nbsp; &nbsp; <a>3-Park</a>
       </div>
-      <div class="product silver">
-        <p>Silver Membership<br><span>$200</span></p>
+      <div id="header">
+        <div class="product bronze">
+          <p>Bronze Membership<br><span>$100</span></p>
+        </div>
+        <div class="product silver">
+          <p>Silver Membership<br><span>$200</span></p>
+        </div>
+        <div class="product gold">
+          <p>Gold Membership<br><span>$300</span></p>
+        </div>
+        <div class="product platinum">
+          <p>Pltainum Membership<br><span>$400</span></p>
+        </div>
+      </div> <!-- END HEADER -->
+      <div id="buytab">
+        <button>BUY</button>
+        <button>BUY</button>
+        <button>BUY</button>
+        <button>BUY</button>
       </div>
-      <div class="product gold">
-        <p>Gold Membership<br><span>$300</span></p>
-      </div>
-      <div class="product platinum">
-        <p>Pltainum Membership<br><span>$400</span></p>
-      </div>
-    </div> <!-- END HEADER -->
-    <div id="buytab">
-      <button>BUY</button>
-      <button>BUY</button>
-      <button>BUY</button>
-      <button>BUY</button>
     </div>
 
     <div class="cr">

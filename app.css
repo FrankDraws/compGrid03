@@ -41,15 +41,22 @@ h3 {
     / / / / STICKY 
 */
 
-.topSection, #header, #buytab {
+.topSection, #header, #buytab, #passes {
   position: sticky;
-  z-index: 500;
   width: 100%;
+}
+
+.topSection, #heaer, #buytab {
+  z-index: 500;
 }
 
 /* 
     / / / / CONTAINER  
 */
+
+#passes {
+  top: 177px;
+}
 
 #container {
   max-width: 600px;
@@ -66,13 +73,15 @@ h3 {
 
 .topSection {
   max-width: 600px;
-  /* position: sticky; */
-  top: -60px;
+  max-height: 180px;
+  top: 0;
+  overflow-y: auto;
 }
 
 .warning {
   padding: 1em;
   height: 60px;
+  background-color: #fff;
 }
 
 .warning p {
@@ -126,7 +135,7 @@ h3 {
 .accordion {
   width: 100%;
   height: auto;
-  /* background-color: #1c3385; */
+  background-color: #fff;
   color: #0368D9;
   padding: .7em 0 1em 1em;
   border-top: 1px solid #dbdbdb;
@@ -160,7 +169,7 @@ h3 {
   /* position: sticky; */
   /* border-top: 1px solid #dbdbdb; */
   /* margin-top: 180px; */
-  top: 120px;
+  /* top: 180px; */
 }
 
 .product {
@@ -259,7 +268,7 @@ h3 {
   padding: 0 .7em;
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
-  top: 194px;
+  /* top: 194px; */
 }
 
 button {
