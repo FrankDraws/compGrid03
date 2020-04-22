@@ -2,16 +2,13 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: auto;
+  /* height: 100vh; */
 }
 
 body {
-  display: flex;
-  justify-content: center;
   font-size: calc(16px + 0.5vw);
   line-height: calc(1.1em + 0.5vw);
   font-family: "Helvetica", sans-serif;
-  overflow: auto;
 }
 
 * {
@@ -39,21 +36,29 @@ h3 {
 
 #container {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  /* overflow-y: scroll; */
 }
 
 /* 
     / / / / STICKY  & LAYERING
 */
 
-#topSection, #passes {
-  z-index: 500;
-  position: -webkit-sticky;
+#topSection {
+  /* z-index: 500; */
   position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+#passes {
+  /* z-index: 500; */
+  position: sticky;
+  position: -webkit-sticky;
   top: 0;
 }
 
@@ -150,7 +155,6 @@ h3 {
 
 #passes {
   height: 162px;
-  top: 0;
 }
 
 .accordion {
