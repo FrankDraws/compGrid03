@@ -39,11 +39,14 @@ h3 {
 }
 
 #topSection, #passes {
-  z-index: 10;
+  z-index: 500;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 #grid, #heroIntro {
-  z-index: 0;
+  z-index: -1;
 }
 
 /* 
@@ -65,11 +68,11 @@ h3 {
 
 #topSection {
   width: 100vw;
+  height: 180px;
 }
 
-.stick {
-  position: sticky;
-  top: 0;
+#passes {
+  height: 162px;
 }
 
 #heroIntro {
