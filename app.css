@@ -107,17 +107,17 @@ section {
   height: 60px;
   background-color: #0368D9;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  padding-left: 1em;
 }
 
-.circle {
+/* .circle {
   border-radius: 50%;
   width: 45px;
   height: 45px;
   border: 10px solid #162B75;
   margin-left: 1em;
-}
+} */
 
 .ticketWidget {
   width: 100%;
