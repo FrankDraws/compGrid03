@@ -7,14 +7,14 @@
   <title>compGrid03</title>
   <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="app.css" />
-
+  <link rel="jquery" href="https://code.jquery.com/jquery-1.6.4.min.js">
 </head>
 
 <body>
 
 
   <div id="container">
-
+    <a name="top"></a>
     <!-- TOP SECTION-->
     <section>
       <!-- This section is necessary in order for sticky to work properly-->
@@ -816,11 +816,25 @@
         </p>
       </div>
 
-    </div><!-- CONTENT-->
 
+    </div><!-- end grid-->
 
+    <div class="bttWrapper">
+      <div><a href="#top" onclick="scrollToTop();return false"><img
+            src="https://img.icons8.com/ios-glyphs/30/ffffff/circled-up-2.png" /></div></a>
+    </div>
 
   </div> <!-- CONTAINER -->
+
+  <script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 1000);
+    });
+  </script>
 </body>
 
 </html>

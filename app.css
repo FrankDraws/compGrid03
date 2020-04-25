@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   /* height: 100vh; */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -53,19 +54,10 @@ section {
   /* position: relative; */
 }
 
-/* section {
-  width: 100vw;
-  height: 60px;
-  background-color: slategray;
-  position: sticky;
-  position: -webkit-sticky;
-  top: -1px;
-} */
-
 #topSection {
-  z-index: 10;
   width: 100vw;
   height: 180px;
+  z-index: 10;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -73,8 +65,8 @@ section {
 
 #passes {
   width: 100vw;
-  z-index: 10;
   height: 162px;
+  z-index: 10;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -83,6 +75,33 @@ section {
 #grid, #heroIntro {
   z-index: -1;
   width: 100vw;
+}
+
+/* 
+    / / / / SCROLL TO TOP  
+*/
+
+.bttWrapper {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.bttWrapper>div {
+  background-color: #162B75;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.3em;
+}
+
+.btt>img {
+  display: block;
 }
 
 /* 
