@@ -90,18 +90,20 @@ section {
 }
 
 .bttWrapper>div {
-  background-color: #162B75;
+  /* background-color: #162B75; */
   width: 40px;
   height: 40px;
-  border-radius: 12px 12px 0 0;
+  /* border-radius: 12px 12px 0 0; */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 1.3em;
+  margin-right: 1.6em;
+  margin-bottom: 1.6em;
 }
 
 .btt>img {
   display: block;
+  padding: 1em;
 }
 
 /* 
