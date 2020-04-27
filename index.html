@@ -8,13 +8,19 @@
   <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="app.css" />
   <script src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 
 </head>
 
 <body>
 
 
+
   <div id="container">
+    <div id="reappear" style="display: none;">
+      <img src="https://img.icons8.com/material-outlined/40/162B75/globe-earth.png" />
+    </div>
+
     <a name="top"></a>
     <!-- TOP SECTION-->
     <section>
@@ -834,6 +840,25 @@
   </div> <!-- CONTAINER -->
 
   <script>
+
+    // $(window).scroll(function () {
+    //   if ($(window).scrollTop() === 900) {
+    //     $('#reappear').fadeIn(300);
+    //   } else {
+    //     $('#reappear').fadeOut(200);
+    //   }
+    // });
+
+    $(document).scroll(function () {
+      var y = $(this).scrollTop();
+      if (y >= 2630) {
+        $('#reappear').fadeIn(300);
+      } else {
+        $('#reappear').fadeOut(200);
+      }
+
+    });
+
     $('a[href^="#"]').click(function () {
       $('html, body').animate({
         scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
@@ -842,6 +867,7 @@
       return false;
     });
   </script>
+
 </body>
 
 </html>
