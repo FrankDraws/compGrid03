@@ -83,7 +83,7 @@ section {
   z-index: 10;
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: -50px;
 }
 
 #grid, #heroIntro {
@@ -224,7 +224,7 @@ section {
 #header {
   display: flex;
   width: 100%;
-  height: 65px;
+  /* height: 65px; */
   background-color: #fff;
 }
 
@@ -232,8 +232,15 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 25%;
   background-color: #fff;
+  /* outline: 1px solid gray; */
+}
+
+.passIcon img {
+  margin: .4em 0 -0.2em;
+  padding: 0;
 }
 
 .product span {
@@ -353,7 +360,7 @@ footer>span {
   text-align: center;
   font: 900 2em/1.3 "Helvetica", sans-serif;
   color: #333;
-  margin-top: 2em;
+  margin-top: 4em;
   /* position: sticky;
   position: -webkit-sticky;
   top: 0; */
