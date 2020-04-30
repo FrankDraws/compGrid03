@@ -846,9 +846,12 @@
   <script>
 
     // This is the add/remove header function
+    // Timing 2680 works on iPhone 7/8.
+    // Timing 2530 works on mobile simulation on desktop
+    // Timing 2580 is the compromise between the two
     $(document).scroll(function () {
       var y = $(this).scrollTop();
-      if (y >= 2520) {
+      if (y >= 2680) {
         $('#reappear').fadeIn(300);
       } else {
         $('#reappear').fadeOut(200);
